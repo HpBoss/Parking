@@ -1,0 +1,2 @@
+把ege文件夹 ege.h 和 graphics.h 覆盖以下文件夹即可
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include

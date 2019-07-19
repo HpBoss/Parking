@@ -1,0 +1,16 @@
+#include "graphics.h"
+
+int main()
+{
+    initgraph(600, 400);
+    setcolor(WHITE);    
+    bar3d(100, 100, 200, 200, 25, 1);
+	setfillcolor(YELLOW);
+	floodfill(150,150,WHITE);
+	setfillcolor(GREEN);
+	floodfill(200,90,WHITE);
+	setfillcolor(RED);
+	floodfill(220,150,WHITE);
+    getch();
+    return 0;
+}

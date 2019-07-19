@@ -1,0 +1,25 @@
+#include <graphics.h>
+int main()
+{
+	int x=0,y=0,i=1;
+	int x1=100,x2=450,y1=100;
+	PIMAGE img; 
+	initgraph(640, 480);
+	setbkcolor(EGERGB(100,132,113)); //设置背景颜色 
+	img = newimage();
+	getimage(img,"yaoming.JPG",0,0);
+	//得到一个图片，放在执行exe文件同一个位置. 也可以指定如(c://MARIO.BMP)
+	putimage(x1-50,y1-50,320,400,img,1,1,160,200);
+	while(1)
+	{
+		
+		cleardevice();
+		putimage(x1-50,y1-50,320-8*i,400-10*i,img,1,1,160,200);
+		delay_ms(200);
+		i++;
+		if(i==40){i=1;}
+	}
+	getch();
+	closegraph();
+	return 0;
+}

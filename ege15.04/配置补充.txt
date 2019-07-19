@@ -1,0 +1,5 @@
+对于codeblocks 需要添加若干个链接文件
+
+对于去掉底层黑框
+可以右键点击工程，点击properties，选择build targets选框，选release页，然后
+在selected build target options 区域中的type选择 GUI application

@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1545820768 source:d:\codeblock\files\txt1\function.cpp
+	<graphics.h>
+	"pch.h"
+	<cstdio>
+	<iomanip>
+
+1545820322 d:\codeblock\files\txt1\pch.h
+	"cstdio"
+	"cstdlib"
+	"string"
+	<iostream>
+
+1545820515 source:d:\codeblock\files\txt1\main.cpp
+	<graphics.h>
+	<time.h>
+	<math.h>
+	"pch.h"
+
+1545924936 source:d:\codeblock\files\parkinglot\main.cpp
+	<graphics.h>
+	<time.h>
+	<math.h>
+	"pch.h"
+
+1545897489 d:\codeblock\files\parkinglot\pch.h
+	"cstdio"
+	"cstdlib"
+	"string"
+	<iostream>
+
+1545920031 source:d:\codeblock\files\parkinglot\function.cpp
+	<graphics.h>
+	"pch.h"
+	<cstdio>
+	<iomanip>
+

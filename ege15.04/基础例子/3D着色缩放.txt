@@ -1,0 +1,44 @@
+#include "graphics.h"
+int main()
+{
+	initgraph(500,500);
+	setcolor(WHITE);
+	int i=0,j=0;
+	int x1=100,x2=300,y1=100,y2=300,z=50;
+	for(;is_run;delay_fps(10))
+	{
+		if(j==0)
+		{
+			i++;
+			x1=x1+4;x2=x2+4;
+			y1=y1+2;y2=y2+2;
+			cleardevice();
+			bar3d(4*i+x1,4*i+y1,x2,y2,z-i,1);
+			setfillcolor(YELLOW);
+			floodfill(x1+4*i+1,y1+4*i+1,WHITE);
+			setfillcolor(GREEN);
+			floodfill(x2,y1+4*i-2,WHITE);
+			setfillcolor(RED);
+			floodfill(x2+1,y1+4*i+1,WHITE);
+			if(i==40){j=1;}
+		}
+		if(j==1)
+		{
+			i--;
+			x1=x1-4;x2=x2-4;
+			y1=y1-2;y2=y2-2;
+			cleardevice();
+			bar3d(x1+4*i,y1+4*i,x2,y2,z-i,1);
+			setfillcolor(BLUE);
+			floodfill(x1+4*i+1,y1+4*i+1,WHITE);
+			setfillcolor(RED);
+			floodfill(x2,y1+4*i-2,WHITE);
+			setfillcolor(YELLOW);
+			floodfill(x2+1,y1+4*i+1,WHITE);
+			if(i==0){j=0;}
+		}
+	}
+	getch();
+	closegraph();
+	return 0;
+}
